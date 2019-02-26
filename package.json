@@ -1,12 +1,12 @@
 {
-  "name": "bounty-hunter",
+  "name": "bountysource-hunter",
   "version": "1.0.0",
   "description": "Adds a bounty badge for issues with active bounties",
   "author": "Neil Kalman <neilkalman@gmail.com>",
   "license": "ISC",
-  "repository": "https://github.com//bounty-hunter.git",
-  "homepage": "https://github.com//bounty-hunter",
-  "bugs": "https://github.com//bounty-hunter/issues",
+  "repository": "https://github.com//bountysource-hunter.git",
+  "homepage": "https://github.com//bountysource-hunter",
+  "bugs": "https://github.com//bountysource-hunter/issues",
   "keywords": [
     "probot",
     "github",

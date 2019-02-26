@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "name": "bounty-hunter",
-  "alias": "bounty-hunter.now.sh",
+  "name": "bountysource-hunter",
+  "alias": "bountysource-hunter.now.sh",
   "public": true,
   "type": "npm",
   "env": {
