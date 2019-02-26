@@ -1,7 +1,7 @@
-<span align="center">
-  <img src="avatar.jpg" height="250">
-  <h1>bountysource-hunter</h1>
-</span>
+<p align="center">
+  <a href="https://github/apps/bountysource-hunter" target="blank"><img src="avatar.jpg" width="250" ></a>
+  <h1 align="center">bountysource-hunter</h1>
+</p>
 
 Adds a bounty badge for issues with active bounties
 
@@ -11,7 +11,7 @@ Adds a bounty badge for issues with active bounties
 
 ## Configuration
 
-Currently, you can set `` to `true` in your configuration if you want to include the badge when there's still no bounty
+Currently, you can set `bountysourceHunterAddBadgeOnZero` to `true` in your configuration if you want to include the badge when there's still no bounty
 
 ```yml
 # .github/config.yml
