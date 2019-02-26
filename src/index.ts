@@ -1,4 +1,5 @@
 import { Application, Context } from 'probot' // eslint-disable-line no-unused-vars
+import { get } from 'lodash';
 
 import { getBountyLink } from './utils/get-bounty-link';
 import { BountyBadge } from './utils/bounty-badge';
@@ -10,7 +11,9 @@ export = (app: Application) => {
 async function addBadge(context: Context) {
   const { body } = context.payload.issue;
 
-  const bountyLink = getBountyLink(body);
+  const addBadgeOnZero = await shouldAddBadgeOnZero(context);
+
+  const bountyLink = getBountyLink(body, addBadgeOnZero);
 
   if (!bountyLink || BountyBadge.isBountyBadgeExists(body)) {
     return;
@@ -23,4 +26,9 @@ async function addBadge(context: Context) {
       body: BountyBadge.embedBadge(body, newBadge),
     })
   );
+}
+
+function shouldAddBadgeOnZero(context: Context) {
+  return context.config('config.yml')
+    .then((config) => get(config, 'bountysourceHunterAddBadgeOnZero', false));
 }
