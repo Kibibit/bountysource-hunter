@@ -9,7 +9,7 @@
     "LOG_LEVEL": "info",
     "APP_ID": "26071",
     "WEBHOOK_SECRET": "@webhook_secret",
-    "PRIVATE_KEY": "@private_key"
+    "PRIVATE_KEY": "@private_key_hunter"
   },
   "scale": {
     "sfo1": {
