@@ -1,5 +1,5 @@
 {
-  "name": "bountysource-hunter",
+  "name": "@kibibit/bountysource-hunter",
   "version": "1.0.0",
   "description": "Adds a bounty badge for issues with active bounties",
   "author": "Neil Kalman <neilkalman@gmail.com>",
@@ -18,7 +18,28 @@
     "start": "probot run ./lib/index.js",
     "lint": "standard **/*.ts --fix",
     "test": "jest && standard **/*.ts",
-    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage",
+    "test:cov": "jest --coverage",
+    "coveralls": "npm run test:cov && cat ./test-results/lcov.info | coveralls",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": false,
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ]
   },
   "dependencies": {
     "@types/lodash": "^4.14.121",
@@ -31,9 +52,11 @@
   "devDependencies": {
     "@types/jest": "^24.0.0",
     "@types/node": "^11.9.0",
+    "all-contributors-cli": "^6.1.2",
     "eslint-plugin-typescript": "^0.14.0",
     "jest": "^24.0.0",
     "nodemon": "^1.17.2",
+    "semantic-release-cli": "^4.1.0",
     "smee-client": "^1.0.2",
     "standard": "^12.0.1",
     "ts-jest": "^24.0.0",
@@ -52,6 +75,24 @@
     ]
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "clover",
+      "html"
+    ],
+    "coverageDirectory": "./test-results",
+    "reporters": [
+      "default",
+      [
+        "jest-html-reporter",
+        {
+          "pageTitle": "achievibit's Test Report",
+          "outputPath": "./test-results/test-report.html"
+        }
+      ]
+    ]
   }
 }
