@@ -1,14 +1,55 @@
 {
   "name": "bounty-hunter",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "description": "Adds a bounty badge for issues with active bounties",
+  "author": "Neil Kalman <neilkalman@gmail.com>",
   "license": "ISC",
+  "repository": "https://github.com//bounty-hunter.git",
+  "homepage": "https://github.com//bounty-hunter",
+  "bugs": "https://github.com//bounty-hunter/issues",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "nodemon --exec \"npm start\"",
+    "start": "probot run ./lib/index.js",
+    "lint": "standard **/*.ts --fix",
+    "test": "jest && standard **/*.ts",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+  },
+  "dependencies": {
+    "nock": "^10.0.0",
+    "@types/nock": "^9.3.0",
+    "probot": "^7.2.0"
+  },
   "devDependencies": {
-    "create-probot-app": "^3.1.0"
+    "@types/jest": "^24.0.0",
+    "@types/node": "^11.9.0",
+    "eslint-plugin-typescript": "^0.14.0",
+    "jest": "^24.0.0",
+    "nodemon": "^1.17.2",
+    "smee-client": "^1.0.2",
+    "standard": "^12.0.1",
+    "ts-jest": "^24.0.0",
+    "typescript": "^3.3.1",
+    "typescript-eslint-parser": "^22.0.0"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "standard": {
+    "parser": "typescript-eslint-parser",
+    "env": [
+      "jest"
+    ],
+    "plugins": [
+      "typescript"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }

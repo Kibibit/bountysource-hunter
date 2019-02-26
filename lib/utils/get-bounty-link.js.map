@@ -1,0 +1,1 @@
+{"version":3,"file":"get-bounty-link.js","sourceRoot":"","sources":["../../src/utils/get-bounty-link.ts"],"names":[],"mappings":";;AAAA,IAAM,kBAAkB,GAAG,mDAAmD,CAAC;AAGlE,QAAA,aAAa,GAAG,UAAC,GAAW;IACvC,IAAM,OAAO,GAAG,kBAAkB,CAAC,IAAI,CAAC,GAAG,CAAC,CAAC;IAE7C,OAAO,OAAO,IAAI,OAAO,CAAC,CAAC,CAAC,CAAC;AAC/B,CAAC,CAAC"}
