@@ -1,9 +1,23 @@
 <p align="center">
   <a href="https://github/apps/bountysource-hunter" target="blank"><img src="avatar.jpg" width="250" ></a>
-  <h1 align="center">bountysource-hunter</h1>
+  <h2 align="center">
+    bountysource-hunter
+  </h2>
 </p>
-
-Adds a bounty badge for issues with active bounties
+<p align="center">
+  <a href="https://probot.github.io/"><img src="https://img.shields.io/badge/Probot-b33p-00B0D8.svg?style=for-the-badge&logo=probot&logoColor=white"></a>
+</p>
+<p align="center">
+  <a href="https://github.com/semantic-release/semantic-release"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg"></a>
+  <a href="https://greenkeeper.io/"><img src="https://img.shields.io/badge/greenkeeper-enabled-brightgreen.svg"></a>
+  <a href="https://travis-ci.org/Kibibit/bountysource-hunter"><img src="https://travis-ci.org/Kibibit/bountysource-hunter.svg?branch=master"></a>
+  <a href="https://coveralls.io/github/Kibibit/bountysource-hunter?branch=master"><img src="https://coveralls.io/repos/github/Kibibit/bountysource-hunter/badge.svg?branch=master"></a>
+  <a href="#contributors"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg"></a>
+</p>
+<p align="center">
+  Adds a bounty badge for issues with active bounties
+</p>
+<hr
 
 ## Setup
 
