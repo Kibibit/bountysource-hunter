@@ -17,7 +17,7 @@
 <p align="center">
   Adds a bounty badge for issues with active bounties
 </p>
-<hr
+<hr>
 
 ## Setup
 
