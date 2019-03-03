@@ -13,7 +13,7 @@
   <a href="https://travis-ci.org/Kibibit/bountysource-hunter"><img src="https://travis-ci.org/Kibibit/bountysource-hunter.svg?branch=master"></a>
   <a href="https://coveralls.io/github/Kibibit/bountysource-hunter?branch=master"><img src="https://coveralls.io/repos/github/Kibibit/bountysource-hunter/badge.svg?branch=master"></a>
   <a href="#contributors"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg"></a>
-  <a href="https://salt.bountysource.com/teams/kibibit"><img src="https://img.shields.io/endpoint.svg?url=https://monthly-salt.now.sh&style=flat-square"></a>
+  <a href="https://salt.bountysource.com/teams/kibibit"><img src="https://img.shields.io/endpoint.svg?url=https://monthly-salt.now.sh/kibibit&style=flat-square"></a>
 </p>
 <p align="center">
   Adds a bounty badge for issues with active bounties
