@@ -25,7 +25,9 @@
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release",
     "contributors:add": "all-contributors add",
-    "contributors:generate": "all-contributors generate"
+    "contributors:generate": "all-contributors generate",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "release": {
     "plugins": [
@@ -48,7 +50,8 @@
     "lodash": "^4.17.11",
     "nock": "^10.0.0",
     "probot": "^7.2.0",
-    "typescript": "^3.3.1"
+    "typescript": "^3.3.1",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.0",
@@ -95,5 +98,6 @@
         }
       ]
     ]
-  }
+  },
+  "snyk": true
 }
